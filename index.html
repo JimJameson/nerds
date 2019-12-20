@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Дизайн-студия "Nerds"</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!--Шапка сайта-->
@@ -25,27 +31,74 @@
           <li><a href="#">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="basket">Корзина</li>
+          <li class="basket"><a href="#">Корзина</a></li>
         </ul>
       </nav>
     </header>
     <main class="container">
-      <h1 class="visually-hidden">вДизайн-студия "Nerds"</h1>
+      <h1 class="visually-hidden">Дизайн-студия "Nerds"</h1>
       <!--Слайдер-->
       <section class="slider">
-        <h2 class="slider-title">Долго, дорого, скрупулезно.</h2>
-        <p class="slider-description">
-          Математически выверенный дизайн для вашего сайта или мобильного
-          приложения
-        </p>
-        <a href="#" class="button">Узнать больше</a>
-        <img
-          src="img/nerds-index-slide1.png"
-          width="1440"
-          height="545"
-          alt="Дизайн для вашего сайта"
-        />
+        <ul class="slider-list">
+          <li class="slider-item">
+            <h2>Долго, дорого, скрупулезно.</h2>
+            <p class="slider-description">
+              Математически выверенный дизайн для вашего сайта или мобильного
+              приложения
+            </p>
+            <a href="#" class="button button-slide">Узнать больше</a>
+            <img
+              src="img/slide1.png"
+              width="698"
+              height="413"
+              alt="Долго, дорого, скрупулезно"
+            />
+          </li>
+          <li class="slider-item">
+            <h2>Любим математику, как никто другой</h2>
+            <p class="slider-description">
+              Никакого креатива, только математические формулы для расчета
+              идеальных пропорций
+            </p>
+            <a href="#" class="button button-slide">Узнать больше</a>
+            <img
+              src="img/slide2.png"
+              width="663"
+              height="430"
+              alt="Любим математику, как никто другой"
+            />
+          </li>
+          <li class="slider-item">
+            <h2>Только ночь, только хардкор</h2>
+            <p class="slider-description">
+              Работать днем, как все? Мы против этого. Ближе к полуночи работа
+              только начинается.
+            </p>
+            <a href="#" class="button button-slide">Узнать больше</a>
+            <img
+              src="img/slide3.png"
+              width="759"
+              height="411"
+              alt="Только ночь, только хардкор"
+            />
+          </li>
+        </ul>
+        <!--Переключатели слайдера -->
+        <div class="slider-radio">
+          <ul class="slider-radio-list">
+            <li class="slider-radio-item">
+              <button class="slide-radion-button">Слайд 1</button>
+            </li>
+            <li class="slider-radio-item">
+              <button class="slide-radion-button">Слайд 2</button>
+            </li>
+            <li class="slider-radio-item">
+              <button class="slide-radion-button">Слайд 3</button>
+            </li>
+          </ul>
+        </div>
       </section>
+
       <!--Услуги-->
       <section class="services">
         <h2 class="visually-hidden">Услуги</h2>
@@ -59,7 +112,7 @@
               alt="Веб-сайты"
             />
             <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
-            <a href="#" class="button button-web-cites">Заказать</a>
+            <a href="#" class="button button-web-sites">Заказать</a>
           </li>
           <li class="services-item">
             <h3>Приложения</h3>
@@ -75,7 +128,7 @@
           <li class="services-item">
             <h3>Презентации</h3>
             <img
-              src="img/illustration-1.jpg"
+              src="img/illustration-3.jpg"
               width="300"
               height="146"
               alt="Презентации"
@@ -85,63 +138,73 @@
           </li>
         </ul>
       </section>
-      <!--Наша студия-->
-      <section class="about-us">
-        <h2 class="visually-hidden">О нас</h2>
-        <b>Мы маленькая, но гордая дизайн-студия из Краснодара.</b>
-        <p class="about-us-description">
-          Исповедуем принципы минимализма и чистоты. Ставим математический
-          расчет превыше креатива. Работаем не покладая рук, как роботы.
-        </p>
-        <ul class="about-us-list">
-          <h3>Выполняем заказы на разработку:</h3>
-          <li class="about-us-item">Веб-сайтов любой сложности</li>
-          <li class="about-us-item">Мобильных приложений для iOS и Android</li>
-          <li class="about-us-item">
-            Слайд-шоу и видео для корпоративных презентаций
-          </li>
-        </ul>
-      </section>
-      <!--Блок статистики-->
-      <section class="statistics">
-        <h2 class="visually-hidden">Статистика</h2>
-        <img
-          src="img/nerds-illustration.jpg"
-          width="360"
-          height="208"
-          alt="Логотип &laquo;Nerds&raquo;"
-        />
-        <ul class="statistics-list">
-          <h3 class="statistics-title">С 2004 года любим точность во всем:</h3>
-          <li class="statistics-item">
-            <p class="statistics-item-indicator">
-              <span class="statistics-item-value">146</span>
-              <span class="statistics-item-percent">%</span>
-            </p>
-            <p class="statistics-item-description">
-              Уровень самоотдачи
-            </p>
-          </li>
-          <li class="statistics-item">
-            <p class="statistics-item-indicator">
-              <span class="statistics-item-value">100</span>
-              <span class="statistics-item-percent">%</span>
-            </p>
-            <p class="statistics-item-description">
-              Соблюдение сроков
-            </p>
-          </li>
-          <li class="statistics-item">
-            <p class="statistics-item-indicator">
-              <span class="statistics-item-value">50</span>
-              <span class="statistics-item-percent">%</span>
-            </p>
-            <p class="statistics-item-description">
-              Минимальная предоплата
-            </p>
-          </li>
-        </ul>
-      </section>
+      <div class="index-columns">
+        <!--Наша студия-->
+        <section class="about-us">
+          <h2 class="visually-hidden">О нас</h2>
+          <b>Мы маленькая, но гордая дизайн-студия из Краснодара.</b>
+          <p class="about-us-description">
+            Исповедуем принципы минимализма и чистоты. Ставим математический
+            расчет превыше креатива. Работаем не покладая рук, как роботы.
+          </p>
+          <ul class="about-us-list">
+            <h3>Выполняем заказы на разработку:</h3>
+            <li class="about-us-item">Веб-сайтов любой сложности</li>
+            <li class="about-us-item">
+              Мобильных приложений для iOS и Android
+            </li>
+            <li class="about-us-item">
+              Слайд-шоу и видео для корпоративных презентаций
+            </li>
+          </ul>
+        </section>
+        <!--Блок статистики-->
+        <section class="statistics">
+          <h2 class="visually-hidden">Статистика</h2>
+          <img
+            src="img/nerds-illustration.jpg"
+            width="360"
+            height="208"
+            alt="Логотип &laquo;Nerds&raquo;"
+          />
+          <ul class="statistics-list">
+            <h3 class="statistics-title">
+              С 2004 года любим точность во всем:
+            </h3>
+            <li class="statistics-item">
+              <p class="statistics-item-indicator">
+                <span class="statistics-item-value">
+                  146<sup class="statistics-item-percent">%</sup>
+                </span>
+              </p>
+              <p class="statistics-item-description">
+                Уровень самоотдачи
+              </p>
+            </li>
+            <li class="statistics-item">
+              <p class="statistics-item-indicator">
+                <span class="statistics-item-value">
+                  100<sup class="statistics-item-percent">%</sup>
+                </span>
+              </p>
+              <p class="statistics-item-description">
+                Соблюдение сроков
+              </p>
+            </li>
+            <li class="statistics-item">
+              <p class="statistics-item-indicator">
+                <span class="statistics-item-value">
+                  50<sup class="statistics-item-percent">%</sup>
+                </span>
+              </p>
+              <p class="statistics-item-description">
+                Минимальная предоплата
+              </p>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <!--Партнеры-->
       <section class="partners">
         <h2 class="visually-hidden">Партнеры</h2>
         <ul class="partners-list">
@@ -180,39 +243,84 @@
     <footer class="main-footer">
       <section class="map">
         <h2 class="visually-hidden">Как нас найти</h2>
+        <div class="footer-map">
+          <img
+            src="img/map-mask.jpg"
+            alt="Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"
+            width="1440"
+            height="785"
+          />
+        </div>
         <div class="adress">
-          <h3 class="adress-title">Nerds design studio</h3>
+          <h3>Nёrds design studio</h3>
           <p class="adress-description">
             191186, Санкт-Петербург<br />
-            ул. Б. Конюшенная, д. 19/8
+            ул. Б. Конюшенная, д. 19/8<br /><br />
+            тел. +7 (812) 275-75-75
           </p>
-          <p class="adress-telephone">тел. +7 (812) 275-75-75</p>
           <a href="#" class="button button-write-to-us">Напишите нам</a>
         </div>
       </section>
       <section class="friendship">
         <h2 class="visually-hidden">Давайте дружить</h2>
         <div class="footer-social">
-          <ul>
-            <li class="social-button">В контакте</li>
-            <li class="social-button">Facebook</li>
-            <li class="social-button">Instagram</li>
+          <ul class="social-button-list">
+            <li class="social-button-item"><a href="#">В контакте</a></li>
+            <li class="social-button-item"><a href="#">Facebook</a></li>
+            <li class="social-button-item"><a href="#">Instagram</a></li>
           </ul>
         </div>
-        <div class="friendship-description">
-          <p class="friendship-description">
+        <div class="friendship">
+          <p class="friendship-call">
             Давайте дружить, это выгодно!
           </p>
-          <p class="friendship-social">
+          <p class="friendship-description">
             Скидка 10% для друзей из социальных сетей.
+          </p>  
           </p>
         </div>
       </section>
     </footer>
     <!--Модальное окно "Напишите нам"-->
     <section class="write-to-us">
-      <h2 class="write-to-us-title">Напишите нам</h2>
-      <!--Здесь будет форма-->
+      <h2>Напишите нам</h2>
+      <form
+        class="write-to-us-form"
+        action="https://echo.htmlacademy.ru"
+        method="post"
+      >
+        <div class="name-and-mail-group">
+          <div class="name-group">
+            <label for="name">Ваше имя:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Имя Фамилия"
+            />
+          </div>
+          <div class="mail-group">
+            <label for="mail">Ваш e-mail:</label>
+            <input
+              type="email"
+              name="mail"
+              id="mail"
+              placeholder="email@example.com"
+            />
+          </div>
+        </div>
+        <div class="text-letter-group">
+          <label for="text-letter">Текст письма:</label>
+          <textarea
+            name="text-letter"
+            id="text-letter"
+            rows="5"
+            placeholder="В свободной форме"
+          ></textarea>
+        </div>
+        <button class="button write-to-us-button">Отправить</button>
+        <button class="close-button write-to-us-close-button">Закрыть</button>
+      </form>
     </section>
   </body>
 </html>
